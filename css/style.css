@@ -1,0 +1,258 @@
+/* COMON CSS STARTS HERE  */
+.row{
+    --bs-gutter-x: 0;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.icon-text h4{
+    font-size: 16px;
+    font-weight: 800;
+    color: #7e8287;
+    padding: 28px 0;
+}
+.icon-text p{
+    line-height: 21px;
+    font-size: 11px;
+    font-weight:400;
+}
+.div-info h2{
+    font-size: 46px;
+    font-weight: 800;
+    color: #02918b;
+}
+.div-info p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 41px;
+    margin: auto;
+}
+.div-info p b{
+    font-size: 23px;
+    font-weight: 800;
+}
+a{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+i{
+    color: #02918b;
+    font-size: 31px;
+}
+
+/* common css ends here  */
+nav{
+    background: #02918b;
+}
+.ul-parents ul li a{
+    font-size: 12px;
+    font-weight: 800;
+    color: #fff;
+    padding: 26px 25px !important;
+    transition: .8s;
+    display: inline-block;
+}
+.ul-parents ul li:hover> a{
+    background: #cfc91d;
+    color: #0b1016;
+}
+/* banner starts here  */
+#banner{
+    background: url(../image/MYFOLIO.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 730px;
+    position: relative;
+    z-index: 1;
+}
+#banner::after{
+    content: '';
+    background: #0b1016;
+    inset: 0;
+    position: absolute;
+    opacity: .6;
+    z-index: -1;
+}
+#banner .container{
+    height: 100%;
+}
+#banner .row{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+#banner .row .text{
+    color: #fff;
+    text-align: center;
+}
+#banner .row .text h3{
+    font-size: 30px;
+    font-weight: 400;
+}
+#banner .row .text h1{
+    font-size: 68px;
+    font-weight: 800;
+    letter-spacing: 30px;
+}
+#banner .row .text p{
+    font-size: 18px;
+    font-weight: 400;
+}
+#banner .row .text img{
+    margin: 52px auto;
+    display: block;
+}
+#banner .row .text a{
+    font-weight: 800;
+    color: #0b1016;
+    background: #cfc91d;
+    padding: 18px 42px;
+}
+/* about style starts here  */
+#about{
+    padding: 100px 128px;
+ }
+#about .container .div-info{
+    text-align: center;
+    padding-bottom: 100px;
+}
+#about .div-info-icon .icon-text{
+    border-right: 1px solid #7e8287;
+    text-align: center;
+    padding: 0 45px;
+}
+#about .div-info-icon .row .icon-text:last-child{
+    border-right: 0px;
+}
+#about .div-info-icon .icon-text i{
+    color: #02918b;
+    font-size: 31px;
+}
+#about .holder .div-info .about-letter{
+    padding: 15px 0 76px 0;
+    font-size: 16px;
+}
+/* about style ends here  */
+
+/* service style starts here  */
+    #service{
+        background: url(../image/service.jpg);
+        background-position: center;
+        background-size: cover;
+        padding: 100px 0;
+    }
+    #service .div-info > div{
+        padding-bottom: 50px;
+    }
+    #service .div-info .ser-text{
+        padding: 25px 55px 25px 0;
+    }
+    #service .div-info .ser-text h4{
+        font-size: 16px;
+        font-weight: 800;
+        color: #7e8287;
+        padding: 20px 0;
+        margin: 0;
+    }
+    #service .div-info .ser-text p{
+        line-height: 21px;
+        font-size: 11px;
+        font-weight: 400; 
+    }
+    /* service style ends here  */
+
+    /* work style starts here  */
+    #work{
+        padding: 100px 0 60px;
+    }
+    #work .div-info{
+        text-align: center;
+        margin-top: 110px;
+        margin-bottom: 110px;
+    }
+    #work .div-info p{
+        width: 676px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 41px;
+        margin: auto;
+        padding-bottom: 35px;
+    }
+    #work .row .pic{
+        position: relative;
+    }
+
+    #work .row .pic img{
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        
+    }
+    #work .row .pic .over{
+        background: rgba(2, 145, 139, .85);
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        left: 28px;
+        right: 28px;
+        top: 21px;
+        bottom: 21px;
+        opacity: 0;
+        visibility: hidden;
+        transition: .8s;
+        padding: 12px;
+    }
+    #work .row .pic:hover .over{
+        opacity: 1;
+        visibility: visible;
+    }
+    /* work style ends here  */
+    /* con me style starts here  */
+    /* contect me style  */
+#con-me{
+   
+}
+#con-me .container .div-info{
+    text-align: center;
+     padding: 70px 0;
+}
+#con-me form{
+    background: #0b1016;
+}
+#con-me form input ,
+#con-me form textarea{
+    width: 100%;
+    display: block;
+    margin: 20px 0 0 0;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #7e8287;
+    padding: 10px;
+}
+#con-me form textarea{
+    resize: vertical;
+}
+#con-me form textarea:focus{
+    border: none;
+}
+#con-me form input::placeholder{
+    text-align: center;
+    background: none;
+    color: #7e8287;
+}
+#con-me form textarea::placeholder{
+    text-align: center;
+    background: none;
+    color: #7e8287;
+}
+#con-me button{
+    padding: 20px 60px;
+    margin: 60px 0 !important;
+    background:#cfc91d;
+    color: #0b1016;
+    margin: 10px;;
+}
